@@ -25,8 +25,7 @@ function Water() {
       uniforms: {
         ...WaterShader.uniforms,
         time: { value: 0 },
-        resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
-        cameraPosition: { value: camera.position }
+        resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) }
       },
       vertexShader: WaterShader.vertexShader,
       fragmentShader: WaterShader.fragmentShader,
@@ -34,12 +33,11 @@ function Water() {
       side: THREE.DoubleSide
     })
     return material
-  }, [camera.position])
+  }, [])
 
   useFrame((state) => {
     if (meshRef.current) {
       meshRef.current.material.uniforms.time.value = state.clock.elapsedTime
-      meshRef.current.material.uniforms.cameraPosition.value.copy(camera.position)
     }
   })
 

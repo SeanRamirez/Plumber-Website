@@ -7,7 +7,6 @@ export const WaterShader = {
     waterColor: { value: new THREE.Color(0x006994) },
     foamColor: { value: new THREE.Color(0xffffff) },
     sunDirection: { value: new THREE.Vector3(1, 1, 1).normalize() },
-    cameraPosition: { value: new THREE.Vector3() },
   },
 
   vertexShader: `
@@ -34,7 +33,6 @@ export const WaterShader = {
     uniform vec3 waterColor;
     uniform vec3 foamColor;
     uniform vec3 sunDirection;
-    uniform vec3 cameraPosition;
     
     varying vec2 vUv;
     varying vec3 vPosition;
