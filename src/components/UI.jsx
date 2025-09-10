@@ -9,7 +9,7 @@ function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-cyan-300 bg-clip-text text-transparent"
+          className="text-6xl md:text-8xl font-bold mb-6 text-white drop-shadow-2xl"
         >
           Ocean Dreams
         </motion.h1>
@@ -18,7 +18,7 @@ function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed"
+          className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-lg"
         >
           Dive into a mesmerizing 3D ocean experience
         </motion.p>
@@ -83,14 +83,14 @@ function AboutSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
             About the
-            <span className="block bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
+            <span className="block text-cyan-300 drop-shadow-lg">
               Experience
             </span>
           </h2>
           
-          <p className="text-lg text-blue-100 mb-6 leading-relaxed">
+          <p className="text-lg text-white mb-6 leading-relaxed drop-shadow-lg">
             This immersive 3D ocean experience combines cutting-edge web technologies 
             with stunning visual effects. Built with React Three Fiber and custom GLSL 
             shaders, every wave and ripple is rendered in real-time.
@@ -99,19 +99,19 @@ function AboutSection() {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-              <span className="text-blue-100">Real-time water simulation</span>
+              <span className="text-white">Real-time water simulation</span>
             </div>
             <div className="flex items-center space-x-3">
               <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-              <span className="text-blue-100">Custom GLSL shaders</span>
+              <span className="text-white">Custom GLSL shaders</span>
             </div>
             <div className="flex items-center space-x-3">
               <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-              <span className="text-blue-100">Responsive design</span>
+              <span className="text-white">Responsive design</span>
             </div>
             <div className="flex items-center space-x-3">
               <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
-              <span className="text-blue-100">Smooth animations</span>
+              <span className="text-white">Smooth animations</span>
             </div>
           </div>
         </motion.div>
@@ -128,19 +128,19 @@ function AboutSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center">
                 <div className="text-3xl mb-2">⚛️</div>
-                <div className="text-blue-100">React</div>
+                <div className="text-white">React</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">🎨</div>
-                <div className="text-blue-100">Three.js</div>
+                <div className="text-white">Three.js</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">🌊</div>
-                <div className="text-blue-100">GLSL</div>
+                <div className="text-white">GLSL</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">🎭</div>
-                <div className="text-blue-100">Framer Motion</div>
+                <div className="text-white">Framer Motion</div>
               </div>
             </div>
           </div>
@@ -184,10 +184,10 @@ function FeaturesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
             Features
           </h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-white max-w-2xl mx-auto drop-shadow-lg">
             Experience the power of modern web technologies in this immersive 3D environment
           </p>
         </motion.div>
@@ -205,7 +205,7 @@ function FeaturesSection() {
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-              <p className="text-blue-100 text-sm leading-relaxed">{feature.description}</p>
+              <p className="text-white text-sm leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>
@@ -224,11 +224,11 @@ function ContactSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
             Get in Touch
           </h2>
           
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-12 max-w-2xl mx-auto drop-shadow-lg">
             Ready to create your own immersive 3D experiences? 
             Let's build something amazing together.
           </p>
@@ -256,7 +256,7 @@ function ContactSection() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
-            className="mt-16 text-blue-200"
+            className="mt-16 text-white drop-shadow-lg"
           >
             <p>Built with ❤️ using React Three Fiber & GLSL</p>
           </motion.div>
